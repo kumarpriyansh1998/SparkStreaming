@@ -9,3 +9,8 @@ The mapIPValue() function is defined to map each line of text data to an IP addr
 The resulting DStream, transformed_access_log, is printed to the console using the pprint() method, which is a method of DStream that displays the first n elements of each RDD in the DStream.
 
 Overall, this code demonstrates how to use PySpark to process streaming data and perform real-time filtering operations.
+
+*Note*
+findspark.init(location) method accepts spark location.
+ssc.checkpoint(checkpoint location) accepts checkpoint directory location
+directory contains log.text file. Files should be added after starting the stream. 
